@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migration>
+  <entity model="App\Models\Appointment">Database\Entities\AppointmentEntity<dependences><entity model="App\Models\User">Database\Entities\UserEntity</entity></dependences></entity>
+  <entity model="App\Models\AuthAccess">Database\Entities\AuthAccessEntity<dependences><entity model="App\Models\User">Database\Entities\UserEntity</entity></dependences></entity>
+  <entity model="App\Models\Center">Database\Entities\CenterEntity</entity>
+  <entity model="App\Models\Permission">Database\Entities\PermissionEntity</entity>
+  <entity model="App\Models\Role">Database\Entities\RoleEntity</entity>
+  <entity model="App\Models\RolePermission">Database\Entities\RolePermissionEntity<dependences><entity model="App\Models\Role">Database\Entities\RoleEntity</entity><entity model="App\Models\Permission">Database\Entities\PermissionEntity</entity></dependences></entity>
+  <entity model="App\Models\Stock">Database\Entities\StockEntity<dependences><entity model="App\Models\Center">Database\Entities\CenterEntity</entity></dependences></entity>
+  <entity model="App\Models\User">Database\Entities\UserEntity<dependences><entity model="App\Models\Center">Database\Entities\CenterEntity</entity></dependences></entity>
+  <seeder name="\Database\Seeders\UserSeeder"></seeder>
+</migration>

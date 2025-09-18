@@ -1,0 +1,113 @@
+[23-Aug-2025 14:44:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Clicalmani\Database\Factory\Factory::superAdmin() in C:\Users\DELL\Documents\tonka-app\database\seeders\UserSeeder.php:23
+Stack trace:
+#0 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Acme\Console.php(470): Database\Seeders\UserSeeder->run()
+#1 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Acme\Console.php(200): Clicalmani\Foundation\Acme\Console->runSeed(Object(Database\Seeders\UserSeeder))
+#2 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Support\Facades\Facade.php(32): Clicalmani\Foundation\Acme\Console->seed(NULL, '02')
+#3 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\console\src\Commands\Local\DBSeedCommand.php(34): Clicalmani\Foundation\Support\Facades\Facade::__callStatic('seed', Array)
+#4 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Command\Command.php(326): Clicalmani\Console\Commands\Local\DBSeedCommand->execute(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Clicalmani\Console\Commands\Local\DBSeedCommand), Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\console\src\Commands\Local\MigrateFreshCommand.php(56): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Command\Command.php(326): Clicalmani\Console\Commands\Local\MigrateFreshCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Application.php(1078): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Application.php(324): Symfony\Component\Console\Application->doRunCommand(Object(Clicalmani\Console\Commands\Local\MigrateFreshCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\DELL\Documents\tonka-app\vendor\symfony\console\Application.php(175): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Maker\Application.php(148): Symfony\Component\Console\Application->run()
+#13 C:\Users\DELL\Documents\tonka-app\tonka(12): Clicalmani\Foundation\Maker\Application->handleCommands()
+#14 {main}
+  thrown in C:\Users\DELL\Documents\tonka-app\database\seeders\UserSeeder.php on line 23
+[25-Aug-2025 14:59:02 UTC] PHP Warning:  Array to string conversion in C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Template.php on line 359
+[25-Aug-2025 15:00:03 UTC] PHP Fatal error:  Uncaught TypeError: Failed to create closure from callable: class Clicalmani\Foundation\Resources\TonkaTwigExtension does not have a method "json" in C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Util\ReflectionCallable.php:45
+Stack trace:
+#0 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Util\ReflectionCallable.php(45): Closure::fromCallable(Array)
+#1 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(318): Twig\Util\ReflectionCallable->__construct(Object(Twig\TwigFilter))
+#2 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(40): Twig\Node\Expression\CallExpression->reflectCallable(Object(Twig\TwigFilter))
+#3 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\FilterExpression.php(78): Twig\Node\Expression\CallExpression->compileCallable(Object(Twig\Compiler))
+#4 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Expression\FilterExpression->compile(Object(Twig\Compiler))
+#5 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(115): Twig\Compiler->subcompile(Object(Twig\Node\Expression\FilterExpression))
+#6 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(67): Twig\Node\Expression\CallExpression->compileArguments(Object(Twig\Compiler))
+#7 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\FilterExpression.php(78): Twig\Node\Expression\CallExpression->compileCallable(Object(Twig\Compiler))
+#8 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Expression\FilterExpression->compile(Object(Twig\Compiler))
+#9 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\PrintNode.php(40): Twig\Compiler->subcompile(Object(Twig\Node\Expression\FilterExpression))
+#10 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\PrintNode->compile(Object(Twig\Compiler))
+#11 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Node.php(121): Twig\Compiler->subcompile(Object(Twig\Node\PrintNode))
+#12 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Node->compile(Object(Twig\Compiler))
+#13 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Node.php(121): Twig\Compiler->subcompile(Object(Twig\Node\Nodes))
+#14 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Node->compile(Object(Twig\Compiler))
+#15 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\ModuleNode.php(352): Twig\Compiler->subcompile(Object(Twig\Node\BodyNode))
+#16 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\ModuleNode.php(108): Twig\Node\ModuleNode->compileDisplay(Object(Twig\Compiler))
+#17 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\ModuleNode.php(86): Twig\Node\ModuleNode->compileTemplate(Object(Twig\Compiler))
+#18 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(74): Twig\Node\ModuleNode->compile(Object(Twig\Compiler))
+#19 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(578): Twig\Compiler->compile(Object(Twig\Node\ModuleNode))
+#20 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(589): Twig\Environment->compile(Object(Twig\Node\ModuleNode))
+#21 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#22 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(370): Twig\Environment->loadTemplate('__TwigTemplate_...', '/dashboard')
+#23 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(333): Twig\Environment->load('/dashboard')
+#24 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Resources\View.php(41): Twig\Environment->render('/dashboard', Array)
+#25 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Resources\View.php(85): Clicalmani\Foundation\Resources\View->render()
+#26 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php(98): Clicalmani\Foundation\Resources\View->__toString()
+#27 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Support\Facades\Facade.php(39): Clicalmani\Foundation\Http\Controllers\RequestController->render()
+#28 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Maker\Application.php(140): Clicalmani\Foundation\Support\Facades\Facade::__callStatic('render', Array)
+#29 C:\Users\DELL\Documents\tonka-app\public\index.php(9): Clicalmani\Foundation\Maker\Application->handleRequest()
+#30 C:\Users\DELL\Documents\tonka-app\server.php(39): require_once('C:\\Users\\DELL\\D...')
+#31 {main}
+
+Next LogicException: Callback for filter "json" is not callable in the current scope. in C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Util\ReflectionCallable.php:47
+Stack trace:
+#0 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(318): Twig\Util\ReflectionCallable->__construct(Object(Twig\TwigFilter))
+#1 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(40): Twig\Node\Expression\CallExpression->reflectCallable(Object(Twig\TwigFilter))
+#2 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\FilterExpression.php(78): Twig\Node\Expression\CallExpression->compileCallable(Object(Twig\Compiler))
+#3 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Expression\FilterExpression->compile(Object(Twig\Compiler))
+#4 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(115): Twig\Compiler->subcompile(Object(Twig\Node\Expression\FilterExpression))
+#5 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\CallExpression.php(67): Twig\Node\Expression\CallExpression->compileArguments(Object(Twig\Compiler))
+#6 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Expression\FilterExpression.php(78): Twig\Node\Expression\CallExpression->compileCallable(Object(Twig\Compiler))
+#7 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Expression\FilterExpression->compile(Object(Twig\Compiler))
+#8 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\PrintNode.php(40): Twig\Compiler->subcompile(Object(Twig\Node\Expression\FilterExpression))
+#9 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\PrintNode->compile(Object(Twig\Compiler))
+#10 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Node.php(121): Twig\Compiler->subcompile(Object(Twig\Node\PrintNode))
+#11 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Node->compile(Object(Twig\Compiler))
+#12 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\Node.php(121): Twig\Compiler->subcompile(Object(Twig\Node\Nodes))
+#13 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(99): Twig\Node\Node->compile(Object(Twig\Compiler))
+#14 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\ModuleNode.php(352): Twig\Compiler->subcompile(Object(Twig\Node\BodyNode))
+#15 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\ModuleNode.php(108): Twig\Node\ModuleNode->compileDisplay(Object(Twig\Compiler))
+#16 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Node\ModuleNode.php(86): Twig\Node\ModuleNode->compileTemplate(Object(Twig\Compiler))
+#17 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Compiler.php(74): Twig\Node\ModuleNode->compile(Object(Twig\Compiler))
+#18 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(578): Twig\Compiler->compile(Object(Twig\Node\ModuleNode))
+#19 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(589): Twig\Environment->compile(Object(Twig\Node\ModuleNode))
+#20 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#21 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(370): Twig\Environment->loadTemplate('__TwigTemplate_...', '/dashboard')
+#22 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(333): Twig\Environment->load('/dashboard')
+#23 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Resources\View.php(41): Twig\Environment->render('/dashboard', Array)
+#24 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Resources\View.php(85): Clicalmani\Foundation\Resources\View->render()
+#25 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php(98): Clicalmani\Foundation\Resources\View->__toString()
+#26 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Support\Facades\Facade.php(39): Clicalmani\Foundation\Http\Controllers\RequestController->render()
+#27 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Maker\Application.php(140): Clicalmani\Foundation\Support\Facades\Facade::__callStatic('render', Array)
+#28 C:\Users\DELL\Documents\tonka-app\public\index.php(9): Clicalmani\Foundation\Maker\Application->handleRequest()
+#29 C:\Users\DELL\Documents\tonka-app\server.php(39): require_once('C:\\Users\\DELL\\D...')
+#30 {main}
+
+Next Twig\Error\SyntaxError: An exception has been thrown during the compilation of a template ("Callback for filter "json" is not callable in the current scope.") in "/dashboard". in C:\Users\DELL\Documents\tonka-app\resources\views//dashboard.twig.php:-1
+Stack trace:
+#0 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(408): Twig\Environment->compileSource(Object(Twig\Source))
+#1 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(370): Twig\Environment->loadTemplate('__TwigTemplate_...', '/dashboard')
+#2 C:\Users\DELL\Documents\tonka-app\vendor\twig\twig\src\Environment.php(333): Twig\Environment->load('/dashboard')
+#3 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Resources\View.php(41): Twig\Environment->render('/dashboard', Array)
+#4 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Resources\View.php(85): Clicalmani\Foundation\Resources\View->render()
+#5 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php(98): Clicalmani\Foundation\Resources\View->__toString()
+#6 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Support\Facades\Facade.php(39): Clicalmani\Foundation\Http\Controllers\RequestController->render()
+#7 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Maker\Application.php(140): Clicalmani\Foundation\Support\Facades\Facade::__callStatic('render', Array)
+#8 C:\Users\DELL\Documents\tonka-app\public\index.php(9): Clicalmani\Foundation\Maker\Application->handleRequest()
+#9 C:\Users\DELL\Documents\tonka-app\server.php(39): require_once('C:\\Users\\DELL\\D...')
+#10 {main}
+  thrown in C:\Users\DELL\Documents\tonka-app\resources\views//dashboard.twig.php on line 4294967295
+[27-Aug-2025 14:36:55 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Controllers\Request" does not exist in C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php:201
+Stack trace:
+#0 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php(201): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php(157): Clicalmani\Foundation\Http\Controllers\RequestController->invokeMethod(Object(Clicalmani\Foundation\Http\Controllers\MethodReflector))
+#2 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php(77): Clicalmani\Foundation\Http\Controllers\RequestController->getResponse()
+#3 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Support\Facades\Facade.php(39): Clicalmani\Foundation\Http\Controllers\RequestController->render()
+#4 C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Maker\Application.php(140): Clicalmani\Foundation\Support\Facades\Facade::__callStatic('render', Array)
+#5 C:\Users\DELL\Documents\tonka-app\public\index.php(9): Clicalmani\Foundation\Maker\Application->handleRequest()
+#6 C:\Users\DELL\Documents\tonka-app\server.php(39): require_once('C:\\Users\\DELL\\D...')
+#7 {main}
+  thrown in C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php on line 201
