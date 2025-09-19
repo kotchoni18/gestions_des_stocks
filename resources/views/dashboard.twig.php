@@ -18,12 +18,10 @@
     <title>Interface Admin - Banque de Sang</title>
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Chart.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
     <style>
        
     </style>
@@ -42,7 +40,7 @@
                 <div class="text-center mb-4">
                     <h4 class="text-white mb-0">
                         <i class="bi bi-droplet-fill text-danger me-2"></i>
-                       SanguinCare Admin
+                       BloodBank Admin
                     </h4>
                 </div>
                 
@@ -291,6 +289,10 @@
                     </div>
                 </section>
             </div>
+                    <div>       
+                        <div>    
+                            <div>
+                                <div>   
                                     <h6>  <i class="bi bi-pie-chart me-2"></i>
                                         Répartition par Groupe
                                     </h6>
@@ -302,19 +304,7 @@
                         </div>
                     </div>
 
-                    <!-- Recent Alerts -->
-                    <div class="card">
-                        <div class="card-header bg-warning text-dark">
-                            <h5 class="mb-0">
-                                <i class="bi bi-bell me-2"></i>
-                                Alertes et Notifications Récentes
-                            </h5>
-                        </div>
-                        <div class="card-body" id="alertsContainer">
-                            <!-- Alerts will be populated by JavaScript -->
-                        </div>
-                    </div>
-                </section>
+             
 
                 <!-- Users Section -->
                 <section id="users" class="content-section">
@@ -616,11 +606,22 @@
             </div>
         </div>
     </div>
+           <!-- Recent Alerts -->
+                    <div class="card">
+                        <div class="card-header bg-warning text-dark">
 
+                        </div>
+                        <div class="card-body" id="alertsContainer">
+                            <!-- Alerts will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </section>
     <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="javascript.js"></script>
-  
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 </html> 

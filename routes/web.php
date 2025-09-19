@@ -11,12 +11,14 @@ use Clicalmani\Foundation\Support\Facades\Route;
  * 
  */
 
-Route::get('/', function () {
-    return view('welcome', ['name' => 'John Smith']);
-})->name('home');
-Route::get('/dashboard', function() {
+
+Route::get('/', function() {
     return view('dashboard');
-});
+})->name('dashboard');
+
+Route::get('/dashboard', function () {
+    return view('dashboard-agent');
+})->name('dashboard-agent');
+
 Route::get('/logout', 'AuthController@login');
 Route::post('/login', 'AuthController@login');
-Route::post('/register', 'UserController@login');

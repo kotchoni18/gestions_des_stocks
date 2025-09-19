@@ -496,10 +496,10 @@
             font-size: 0.875rem;
         }
 
-        /* Focus management for modals */
-        .modal.show .modal-body input:first-of-type {
-            /* Auto-focus first input when modal opens */
-        }
+        /* Focus management for modals 
+        .modal.show .modal-body input:first-of-type {*/
+            /* Auto-focus first input when modal opens 
+        }*/
 
         /* Better mobile interactions */
         @media (max-width: 767px) {
@@ -592,3 +592,6 @@
         .modal.show .modal-dialog {
             transform: scale(1);
         }
+
+
+        
