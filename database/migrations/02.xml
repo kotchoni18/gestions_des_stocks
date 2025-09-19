@@ -8,5 +8,6 @@
   <entity model="App\Models\RolePermission">Database\Entities\RolePermissionEntity<dependences><entity model="App\Models\Role">Database\Entities\RoleEntity</entity><entity model="App\Models\Permission">Database\Entities\PermissionEntity</entity></dependences></entity>
   <entity model="App\Models\Stock">Database\Entities\StockEntity<dependences><entity model="App\Models\Center">Database\Entities\CenterEntity</entity></dependences></entity>
   <entity model="App\Models\User">Database\Entities\UserEntity<dependences><entity model="App\Models\Center">Database\Entities\CenterEntity</entity></dependences></entity>
+  <seeder name="\Database\Seeders\RoleSeeder"></seeder>
   <seeder name="\Database\Seeders\UserSeeder"></seeder>
 </migration>

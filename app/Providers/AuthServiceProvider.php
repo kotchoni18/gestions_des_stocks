@@ -49,4 +49,14 @@ class AuthServiceProvider extends Authenticate
 
 		return false;
 	}
+
+	public function isAdmin()
+	{
+		return $this->user->role()->name === 'admin';
+	}
+
+	public function isAgent()
+	{
+		return $this->user->role()->name === 'agent';
+	}
 }

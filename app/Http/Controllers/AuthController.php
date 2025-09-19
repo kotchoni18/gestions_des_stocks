@@ -18,7 +18,13 @@ class AuthController extends Controller
         if (NULL !== $user) {
             if (password_verify($request->password, $user->password)) {
                 session()->set('user:id', $user->id);
-                return redirect('/dashboard');
+
+                $user = $request->user();
+
+                if ($user->isAdmin()) return redirect('/dashboard');
+                if ($user->isAgent()) return redirect('/agent');
+
+                return redirect('/login');
             }
         }
 

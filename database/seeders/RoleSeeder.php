@@ -1,16 +1,16 @@
 <?php 
 namespace Database\Seeders;
 
+use Clicalmani\Database\Factory\Priority;
 use Clicalmani\Database\Seeders\Seeder;
 use Clicalmani\Database\Traits\PreventEventsCapturing;
-use App\Models\User;
-use Clicalmani\Database\Factory\Priority;
+use Clicalmani\Foundation\Support\Facades\DB;
 
-#[Priority(2)]
-class UserSeeder extends Seeder 
+#[Priority(1)]
+class RoleSeeder extends Seeder 
 {
     use PreventEventsCapturing;
-    
+
     /**
      * Run the seeder 
      *
@@ -18,9 +18,9 @@ class UserSeeder extends Seeder
      */
     public function run() : void
     {
-        User::seed()
-            ->count(1)
-            ->superAdmin()
-            ->make();
+        DB::table('roles')->insert([
+            'name' => 'admin',
+            'guid' => 'UID01'
+        ]);
     }
 }

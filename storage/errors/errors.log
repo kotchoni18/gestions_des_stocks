@@ -111,3 +111,4 @@ Stack trace:
 #6 C:\Users\DELL\Documents\tonka-app\server.php(39): require_once('C:\\Users\\DELL\\D...')
 #7 {main}
   thrown in C:\Users\DELL\Documents\tonka-app\vendor\clicalmani\foundation\src\Http\Controllers\RequestController.php on line 201
+[19-Sep-2025 11:36:07 UTC] PHP Warning:  Attempt to read property "id" on array in C:\Users\DELL\Documents\gestions_des_stocks\database\factories\UserFactory.php on line 44

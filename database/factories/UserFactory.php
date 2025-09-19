@@ -41,12 +41,15 @@ class UserFactory extends Factory
                 'lon' => '0.0000'
             ]);
 
+            $role_id = DB::table('roles')->all()->first()['id'];
+
             return [
                 'name' => faker()->name(),
                 'email' => faker()->unique()->safeEmail,
                 'email_verified_at' => now(),
                 'password' => password('password'), // password
                 'center_id' => $center_id,
+                'role_id' => $role_id
             ];
         });
     }

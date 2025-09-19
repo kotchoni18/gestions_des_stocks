@@ -67,4 +67,11 @@ class UserEntity extends Entity
         nullable: true
     ), Validate('required|id|model:center')]
     public Integer $center_id;
+
+    #[Property(
+        length: 10,
+        unsigned: true,
+        nullable: false
+    ), Validate('required|id|model:role')]
+    public Integer $role_id;
 }

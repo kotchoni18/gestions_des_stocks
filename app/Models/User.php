@@ -39,4 +39,9 @@ class User extends Model
     {
         parent::__construct($id);
     }
+
+    public function role()
+    {
+        return $this->hasOne(Role::class);
+    }
 }

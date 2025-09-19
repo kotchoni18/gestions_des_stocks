@@ -12,6 +12,8 @@ class Role extends Model
      */
     protected $table = "roles";
 
+    protected $table_singular = 'role';
+
     /**
      * Model entity
      * 

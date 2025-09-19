@@ -36,7 +36,7 @@ class RoleEntity extends Entity
     public VarChar $name;
 
     #[Property(
-        length: 10,
+        length: 5,
         nullable: false
     ), Validate('required|string|length:10')]
     public Char $guid;
